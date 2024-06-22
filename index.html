@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>create_a_random_team</title>
+  <script src="static/js/script.js"></script>
+  <script src="static/js/sans.js"></script>
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <p>Create a random team</p>
+  <div class="main-div">
+    <section class="side-input-section" style="border: 1px solid red">
+      <label>
+        <textarea class="team-input" oninput="update_line_count()" onkeydown="limit_lines(event)"></textarea>
+      </label>
+      <button onclick="create_a_random_team()">create</button>
+      <button onclick="get_cookie()">load</button>
+      <span class="user-count">(0/10)</span>
+      <br>
+      <button class="wa-sans" onclick="wa_sans()">WA!</button>
+    </section>
+
+    <section class="main-team-table-section" style="border: 1px solid blue">
+      <table border="1">
+        <tr>
+          <th>pos</th>
+          <th>#1</th>
+          <th>#2</th>
+        </tr>
+        <tr class="top">
+          <td>top</td>
+          <td class="team-1"></td>
+          <td class="team-2"></td>
+        </tr>
+        <tr class="jug">
+          <td>jug</td>
+          <td class="team-1"></td>
+          <td class="team-2"></td>
+        </tr>
+        <tr class="mid">
+          <td>mid</td>
+          <td class="team-1"></td>
+          <td class="team-2"></td>
+        </tr>
+        <tr class="adc">
+          <td>adc</td>
+          <td class="team-1"></td>
+          <td class="team-2"></td>
+        </tr>
+        <tr class="sup">
+          <td>sup</td>
+          <td class="team-1"></td>
+          <td class="team-2"></td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+
+</html>

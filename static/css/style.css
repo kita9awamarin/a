@@ -1,0 +1,45 @@
+.no-js {height: 100%;}
+body {height: 80%;}
+.main-div {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    max-width: 770px;
+    height: 60%;
+}
+.side-input-section {
+    width: 25%;
+}
+.side-input-section .wa-sans {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.side-input-section .team-input {
+    height: 200px;
+}
+.main-team-table-section {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+}
+.main-team-table-section table {
+    height: 200px;
+    text-align: center;
+}
+.main-team-table-section table tr {height: 30px;}
+.main-team-table-section table th:nth-child(1) {width: 80px;}
+.main-team-table-section table th:nth-child(2) {width: 160px;}
+.main-team-table-section table th:nth-child(3) {width: 160px;}
+@media screen and (max-width: 765px) {
+    .main-div {
+        display: block;
+    }
+    .side-input-section {
+        width: 200px;
+    }
+    .main-team-table-section {
+        padding-top: 30px;
+        width: 420px;
+    }
+}
